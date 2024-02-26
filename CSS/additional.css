@@ -57,11 +57,13 @@ body, html {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #FFFFFF !important;
+    border-color: #579196 !important;
+    color: #1a1e21 !important;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #023C41 !important;
+    border-color: #023C41 !important;
+    color: #FFFFFF !important;
 }
