@@ -7,23 +7,6 @@
     <link rel="stylesheet" href="./CSS/fontawesome.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
 
-    <style>
-        /* Custom styles for the landing page */
-        .landing-container {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .landing-text {
-            text-align: center;
-        }
-        /* Hide the main content initially */
-        #mainContent {
-            display: none;
-        }
-    </style>
 
 </head>
 <body>
@@ -32,7 +15,7 @@
 <div id="landingPage">
     <div class="landing-container animate__animated animate__fadeIn">
         <img src="./Assests/logo.png" alt="SollydZ Logo" width="100" height="80" class="animate__animated animate__bounceInDown">
-        <h1 class="landing-text animate__animated animate__bounceInDown">Welcome to SollydZ Core</h1>
+        <h1 class="landing-text animate__animated animate__bounceInDown"><b>Welcome to SollydZ Core</b></h1>
         <p class="landing-text animate__animated animate__fadeIn">"Innovation distinguishes between a leader and a follower." - Steve Jobs</p>
         <button type="button" class="btn btn-outline-light animate__animated animate__fadeInUp" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Contact Us
@@ -58,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blogs</a>
@@ -84,6 +67,71 @@
         </div>
     </nav>
     <!--Nav bar end-->
+
+    <!-- Home page start -->
+    <div  id="#home" class="container-fluid vh-100 py-5 d-flex align-items-center bg-img">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2 text-center text-lg-left">
+                    <h2 class="display-4 mb-4 animate__animated animate__fadeInLeft"><b>SollydZ Core</b></h2>
+                    <p class="lead mb-4 animate__animated animate__fadeInLeft">At <span class="text-primary fw-bold">SollydZ Core</span>, we are driven by innovation and dedicated to providing cutting-edge software solutions to empower businesses and individuals. With a focus on quality, creativity, and customer satisfaction, we strive to exceed expectations and deliver exceptional results.</p>
+                    <a href="#" class="btn btn-primary btn-lg animate__animated animate__fadeInLeft">Learn More</a>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center animate__animated animate__fadeInRight">
+                    <img src="./Assests/home.jpg" alt="Home Image" class="home-image img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home page end -->
+
+    <!-- Blog section start -->
+    <div id="blog" class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Blog Posts</h2>
+            <div class="row">
+                <!-- Java Blog Post -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Java Programming</h5>
+                            <p class="card-text">Java is a widely-used programming language known for its portability, security, and robustness. In this blog post, we introduce the basic concepts of Java programming, including variables, data types, control structures, and object-oriented programming principles.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- React.js Blog Post -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Getting Started with React.js</h5>
+                            <p class="card-text">React.js is a powerful JavaScript library for building user interfaces. This blog post provides an introduction to React.js, explaining its key concepts such as components, JSX syntax, state, and props. Whether you're a beginner or an experienced developer, this guide will help you get started with React.js development.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Python Blog Post -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Python Programming for Beginners</h5>
+                            <p class="card-text">Python is a versatile programming language known for its simplicity and readability. In this blog post, we provide a beginner-friendly introduction to Python programming. Topics covered include basic syntax, data types, control structures, and commonly used Python libraries. Whether you're new to programming or looking to expand your skills, this guide is a great starting point for learning Python.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog section end -->
+
+
 </div>
 
 
@@ -130,7 +178,7 @@
     setTimeout(function() {
         document.getElementById('landingPage').style.display = 'none';
         document.getElementById('mainContent').style.display = 'block';
-    }, 4000);
+    }, 1000);
 </script>
 <script src="JS/Main.js"></script>
 <script src="JS/bootstrap.bundle.min.js"></script>

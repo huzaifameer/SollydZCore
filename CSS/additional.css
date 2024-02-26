@@ -1,22 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,430;1,430&display=swap');
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 430;
+    font-style: normal;
     background-color: #FC9C48 !important;
 }
-
 .landing-container {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 20px;
 }
+
+/* Hide the main content initially */
+#mainContent {
+    display: none;
+}
+
 .landing-text {
     margin: 20px 0;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 /* Hide the main content initially */
 #mainContent {
@@ -35,4 +42,26 @@ body, html {
 .gray-strip p {
     margin: 0;
     font-size: 14px;
+}
+
+/* additional.css */
+.home-image {
+    max-width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Adjust background color if needed */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
