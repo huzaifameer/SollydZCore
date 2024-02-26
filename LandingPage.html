@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SollydZ Core</title>
+  <link rel="stylesheet" href="./CSS/additional.css">
+  <link rel="stylesheet" href="./CSS/fontawesome.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <style>
+    /* Custom styles for the landing page */
+    .landing-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .landing-text {
+      text-align: center;
+    }
+
+    /* Hide the main content initially */
+    #mainContent {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<!-- Landing page start -->
+<div class="landing-container animate__animated animate__fadeIn">
+  <h1 class="landing-text animate__animated animate__bounceInDown">Welcome to SollydZ Core</h1>
+  <p class="landing-text animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <button type="button" class="btn btn-outline-light animate__animated animate__fadeInUp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Contact Us
+  </button>
+</div>
+<!-- Landing page end -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get In Touch With Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="65e7ff56-5245-4a7e-abac-e0171f455759">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success" name="sendMessage" id="sendButton">Send</button>
+        </form>
+        <div id="successMessage" class="mt-3 text-success" style="display: none;">Message sent successfully!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script>
+  // Delay showing the main content after 4 seconds
+  setTimeout(function() {
+    document.getElementById('landingPage').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+  }, 4000);
+</script>
+</body>
+</html>
