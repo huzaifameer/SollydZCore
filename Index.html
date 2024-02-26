@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>SollydZ Core</title>
-  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/additional.css">
+    <link rel="stylesheet" href="./CSS/fontawesome.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
 </head>
 <body>
+
+<!--Nav bar start-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">
+            <img src="./Assests/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
+            SollydZ
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About SollydZ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">SollydZ Core</a></li>
+                        <li><a class="dropdown-item" href="#">Projects</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Technologies</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Contact Us
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--Nav bar end-->
+
+
+
+
+
+<!--contact area start-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Get In Touch With Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" name="sendMessage" id="sendButton">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--contact area end-->
 
 
 <script src="JS/bootstrap.bundle.min.js"></script>
